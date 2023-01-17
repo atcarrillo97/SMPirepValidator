@@ -129,4 +129,11 @@ class SMPirepValidatorData extends CodonModule
         }
         return true;
     }
+	public static function clearData() {
+        
+        $query = "TRUNCATE table sm_onlinelog";
+
+        DB::query($query);
+        
+    }
 }
